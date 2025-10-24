@@ -1,0 +1,121 @@
+:root {
+  --cor-primaria: #00c3ff;
+  --cor-secundaria: #0078ff;
+  --cor-fundo: #0a0a0a;
+  --cor-texto: #e8e8e8;
+  --cor-card: #121212;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(90deg, var(--cor-secundaria), var(--cor-primaria));
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: var(--cor-primaria);
+  margin-bottom: 15px;
+  border-left: 4px solid var(--cor-primaria);
+  padding-left: 10px;
+}
+
+p, ul {
+  font-size: 1.05rem;
+  color: #ccc;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: '✔';
+  color: var(--cor-primaria);
+  margin-right: 8px;
+}
+
+.imagens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.imagens img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.imagens img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(0, 195, 255, 0.6);
+}
+
+.integrantes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: var(--cor-card);
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(0, 195, 255, 0.1);
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 25px;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+footer p span {
+  color: var(--cor-primaria);
+}
